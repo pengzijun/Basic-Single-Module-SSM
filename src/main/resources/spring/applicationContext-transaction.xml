@@ -26,6 +26,7 @@ http://www.springframework.org/schema/aop/spring-aop-3.2.xsd">
     </bean>
 
     <aop:config proxy-target-class="true">
+
         <!-- pointcut-ref="druid-stat-pointcut" 这个报红没事-->
         <aop:advisor advice-ref="druid-stat-interceptor" pointcut-ref="druid-stat-pointcut" />
     </aop:config>
